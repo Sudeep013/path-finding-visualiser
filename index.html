@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Path Finding Visualizer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/node.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/selector.js" defer></script>
+    <script src="js/aStar.js"></script>
+    <script src="js/astarM.js"></script>
+    <script src="js/dijkstra.js"></script>
+    
+</head>
+<body>
+    <header class="nav">
+        <div class="nav-title">
+            <h1>Path Finding Visualser</h1>
+        </div>
+
+        <div class="nav-item">
+                <h3 class="nav-items first">Choose Algorithm</h3>
+                <h3 class="nav-items algo-name euc">Astar (Euclidean Distance) </h3>
+                <h3 class="nav-items algo-name man">Astar (Manhatton Distance)</h3>
+                <h3 class="nav-items algo-name dij">Dijkstra </h3>
+                <!-- <div class="grid-size nav-items">
+                    <input type="number" name="" id="" >
+                    <input type="number" name="" id="">
+                </div> -->
+        </div>
+
+        <div class="nav-blocks">
+            
+            <div class="start-block block">
+            </div>
+            
+            <div class="end-block block">
+            </div>
+            <div class="wall-block block">
+
+            </div>
+            <div class="neighbor-block block">
+
+            </div>
+            <div class="path-block block">
+
+            </div>
+            <div class="visualize-btn">
+                <button class="visualize">
+                    Create Wall
+                </button>
+            </div>
+
+            <div class="clear-btn">
+                <button class="clear clr">
+                    Clear
+                </button>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main>
+        <canvas id="canvas" width="1300" height="650"></canvas>
+    </main>
+    
+</body>
+</html>
